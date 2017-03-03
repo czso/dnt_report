@@ -1,0 +1,33 @@
+body, html {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+mark {
+  background-color: #D9FBD6;
+  font-family: "Consolas";
+}
+table td:nth-child(2) {
+  width: 85px;
+}
+div#main-frame {
+  background-color: #F2F2F2;
+  font-size: .9em;
+  padding: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  box-shadow: 0 0px 10px rgba(56, 56, 56, 0.55) !important;
+}
+div.block {
+  padding-left: 10px;
+}
+h3 {
+  background-color: #c9c9c9;
+  margin: 0px;
+  padding: 10px;
+}
+h4 {
+  background-color : #dbdbdb;
+  margin: 4px;
+  padding: 5px;      
+  cursor: pointer;
+}
+
