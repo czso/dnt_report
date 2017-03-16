@@ -47,6 +47,7 @@
     if ($prostredi == null or $prostredi == "PP") {
       $_SESSION["PROSTREDI"] = "PP";
       require_once 'rp_pripojeni.php';              //--- blok pro pripojeni kraju --
+      require_once './rp_statistics.php'; // statistika pristupu na stranky
     } elseif ($prostredi == "TP") {
       $_SESSION["PROSTREDI"] = $prostredi;
       require_once 'rp_pripojeni_tp.php';             //--- blok pro pripojeni kraju na TP --
@@ -62,7 +63,6 @@
     }
 
     require_once "rp_next_data.php";    //další pomocná data z dtb
-    require_once './rp_statistics.php'; // statistika pristupu na stranky
     ?>
 
     <title><?php echo $_SESSION["RP_NAZEV"] ?></title>
