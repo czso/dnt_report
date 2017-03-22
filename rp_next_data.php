@@ -9,7 +9,7 @@ $_SESSION["ULOHA"]= $row[0];
 oci_free_statement($stid_next);
 
 //==============================================================================
-$sql_next="select PREFIX from dante.DNT_ULOHA_PREFIX where KOD='".$_SESSION["ULOHA"]."'";
+$sql_next="select PREFIX from dante.DNT_ULOHA_PREFIX where trim(KOD)='".$_SESSION["ULOHA"]."'";
 $stid_next = oci_parse($Conn, $sql_next);
 oci_execute($stid_next);
 $row = oci_fetch_row($stid_next);

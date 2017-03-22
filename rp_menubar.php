@@ -246,6 +246,11 @@ $aX_ZPRAC = explode(",", $_SESSION["X_ZPRAC"]);
             <a href="rp_history.php" target="_blank">
               <span>Historie změn</span>
             </a>
+          </li>          
+          <li>
+            <a href="rp_showstats.php" target="_blank">
+              <span>Statistika přístupů</span>
+            </a>
           </li>
 <!--          <li>
             <a href="javascript:void(0)">

@@ -25,7 +25,7 @@ require_once "rp_fce_polozky.php";
       }
       $ncols = oci_num_fields($stid);
       for ($i = 1; $i <= $ncols; $i++) {
-        echo "<th>" . oci_field_name($stid, $i) . "<span></span></th>\n";
+        echo "<th title='".@$aTitle[$i]."'>" . oci_field_name($stid, $i) . "<span></span></th>\n";
       } //endfor  
       ?>
     </tr>
